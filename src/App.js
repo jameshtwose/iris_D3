@@ -5,6 +5,10 @@ import weight_data from './data/size_weight.json';
 import MyResponsiveLine from "./line.js";
 import MyResponsiveBar from "./bar.js";
 import MyResponsiveScatterPlot from "./scatter.js";
+
+// import { AutoSizer } from 'react-virtualized'
+
+
 // import {csv} from "d3-fetch";
 // import {min} from "d3-array";
 
@@ -27,18 +31,28 @@ function App() {
 
         <h1>Examples of Nivo Plots</h1>
         
-        <div style={{ width: 900, height: 290 }}>
+        <div className="chart-container" style={{ width: 900, height: 290 }}>
           <MyResponsiveScatterPlot data={weight_data} />
         </div>
 
-        <div style={{ width: 900, height: 290 }}>
+        <div className="chart-container" style={{ width: 900, height: 290 }}>
           <MyResponsiveLine data={travel_data} />
         </div>
 
-        <div style={{ width: 900, height: 290 }}>
+        <div className="chart-container" style={{ width: 900, height: 290 }}>
           <MyResponsiveBar data={food_data} />
         </div>
         
+        {/* <div className="chart-container" style={{ width: 900, height: 290 }}>
+          <AutoSizer>
+              {({ height, width }) => (
+                  <MyResponsiveBar data={food_data}
+                      height={height}
+                      width={width}
+                  />
+              )}
+          </AutoSizer>
+        </div> */}
 
       </header>
     </div>
