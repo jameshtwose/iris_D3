@@ -1,7 +1,7 @@
 {
-  "name": "iris_d3",
+  "name": "plotting_js",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "dependencies": {
     "@nivo/bar": "^0.78.0",
     "@nivo/core": "^0.78.0",
@@ -17,6 +17,7 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "5.0.0",
+    "react-virtualized": "^9.22.3",
     "web-vitals": "^2.1.2"
   },
   "scripts": {
